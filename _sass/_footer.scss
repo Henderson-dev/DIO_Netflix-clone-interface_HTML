@@ -1,0 +1,32 @@
+footer{
+    border-top: 8px solid #222;
+    padding: 60px 120px 30px;
+    display: flex;
+    flex-direction: column;
+    .row-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            li{
+                margin-left: 20px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    transition: all .2s ease-in-out;
+                    &:hover{
+                        color: rgb(155, 155, 155);
+                    }
+                }
+            }
+        }
+    }
+    .row-2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

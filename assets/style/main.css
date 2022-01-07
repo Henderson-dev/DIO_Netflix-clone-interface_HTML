@@ -227,6 +227,57 @@ header .hide {
     display: none;
   }
 }
+footer {
+  border-top: 8px solid #222;
+  padding: 60px 120px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .row-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+footer .row-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+footer .row-1 ul li {
+  margin-left: 20px;
+}
+footer .row-1 ul li a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+footer .row-1 ul li a:hover {
+  color: #9b9b9b;
+}
+footer .row-2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 #video-intro {
   display: none;
 }
