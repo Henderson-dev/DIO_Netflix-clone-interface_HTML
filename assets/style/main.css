@@ -229,7 +229,7 @@ header .hide {
 }
 footer {
   border-top: 8px solid #222;
-  padding: 60px 120px 30px;
+  padding: 60px 30px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,27 +242,33 @@ footer .row-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .row-1 img {
   margin-bottom: 20px;
 }
 footer .row-1 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 footer .row-1 ul li {
-  margin-left: 20px;
+  margin-bottom: 15px;
 }
 footer .row-1 ul li a {
   text-decoration: none;
@@ -273,11 +279,47 @@ footer .row-1 ul li a {
 footer .row-1 ul li a:hover {
   color: #9b9b9b;
 }
-footer .row-2 {
+footer .row-2 p {
   font-size: 1.2rem;
+  line-height: 1.8rem;
   text-align: center;
 }
+footer .row-2 a {
+  color: #9b9b9b;
+  text-decoration: none;
+}
+footer .row-2 a:hover {
+  text-decoration: underline;
+}
 
+@media (min-width: 768px) {
+  footer {
+    padding: 60px 120px 30px;
+  }
+  footer .row-1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  footer .row-1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+  }
+  footer .row-1 ul li {
+    margin-left: 20px;
+  }
+}
 #video-intro {
   display: none;
 }
