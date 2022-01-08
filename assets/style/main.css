@@ -489,7 +489,7 @@ footer .row-2 a:hover {
 }
 
 .bg-film {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -507,20 +507,19 @@ footer .row-2 a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 40px 20px;
 }
 .container-movie .info-movie {
   position: relative;
-  width: 35vw;
+  width: 100vw;
   height: 40vh;
 }
 .container-movie .info-movie .content-info-film {
-  position: fixed;
-  width: 30vw;
+  width: 100vw;
   height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,11 +531,11 @@ footer .row-2 a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 .container-movie .list-chapter {
-  width: 75vw;
-  padding-top: 60vh;
+  width: 100vw;
+  padding-right: 40px;
 }
 .container-movie .list-chapter ul {
   list-style: none;
@@ -545,10 +544,10 @@ footer .row-2 a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -573,8 +572,9 @@ footer .row-2 a:hover {
   z-index: 1;
 }
 .container-movie .list-chapter ul li a img {
-  max-width: 440px;
+  max-width: 100%;
   min-width: 100%;
+  margin-bottom: 15px;
 }
 .container-movie .list-chapter ul li a:hover i {
   border: 6px solid #a5a3a3;
@@ -583,5 +583,90 @@ footer .row-2 a:hover {
   opacity: 0.6;
 }
 .container-movie .list-chapter ul li .container-info {
-  margin-left: 35px;
+  margin-left: 0;
+}
+
+@media (min-width: 992px) {
+  .bg-film {
+    position: fixed;
+    height: 95vh;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, black)), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url("../../assets/images/house_of_cards_featured_image.jpg");
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, black 70%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%), url("../../assets/images/house_of_cards_featured_image.jpg");
+    background-size: cover;
+  }
+
+  .container-movie {
+    position: relative;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container-movie .info-movie {
+    position: relative;
+    width: 35vw;
+    height: 40vh;
+  }
+  .container-movie .info-movie .content-info-film {
+    position: fixed;
+    width: 30vw;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 30px;
+  }
+  .container-movie .list-chapter {
+    width: 75vw;
+    padding-top: 60vh;
+  }
+  .container-movie .list-chapter ul {
+    list-style: none;
+  }
+  .container-movie .list-chapter ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .container-movie .list-chapter ul li a {
+    position: relative;
+    background-color: #000;
+  }
+  .container-movie .list-chapter ul li a i {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 6px solid transparent;
+    z-index: 1;
+  }
+  .container-movie .list-chapter ul li a img {
+    max-width: 440px;
+    margin-bottom: 0;
+  }
+  .container-movie .list-chapter ul li .container-info {
+    margin-left: 35px;
+  }
 }
