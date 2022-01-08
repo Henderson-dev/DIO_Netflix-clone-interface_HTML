@@ -532,6 +532,7 @@ footer .row-2 a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 30px;
 }
 .container-movie .list-chapter {
   width: 75vw;
@@ -554,9 +555,11 @@ footer .row-2 a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 .container-movie .list-chapter ul li a {
   position: relative;
+  background-color: #000;
 }
 .container-movie .list-chapter ul li a i {
   -webkit-transition: all 0.3s ease;
@@ -572,6 +575,12 @@ footer .row-2 a:hover {
 .container-movie .list-chapter ul li a img {
   max-width: 440px;
   min-width: 100%;
+}
+.container-movie .list-chapter ul li a:hover i {
+  border: 6px solid #a5a3a3;
+}
+.container-movie .list-chapter ul li a:hover img {
+  opacity: 0.6;
 }
 .container-movie .list-chapter ul li .container-info {
   margin-left: 35px;

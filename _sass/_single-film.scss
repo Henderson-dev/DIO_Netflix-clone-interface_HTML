@@ -24,14 +24,14 @@
         position: relative;
         width: 35vw;
         height: 40vh;
-
         .content-info-film{
             position: fixed;
             width: 30vw;
             height: 40vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;            
+            justify-content: center;
+            padding-right: 30px;          
         }
     }
 
@@ -45,8 +45,10 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                margin-bottom: 30px;
                 a{
                     position: relative;
+                    background-color: #000;
                     i{
                         transition: all .3s ease;
                         position: absolute;
@@ -60,7 +62,14 @@
                     img{
                         max-width: 440px;
                         min-width: 100%;
+                        
                     }
+                    &:hover i{
+                        border: 6px solid rgb(165, 163, 163);
+                    }
+                    &:hover img{
+                        opacity: 0.6;
+                    }                    
                 }
                 .container-info{
                     margin-left: 35px;
