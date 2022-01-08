@@ -228,6 +228,8 @@ header .hide {
   }
 }
 footer {
+  position: relative;
+  z-index: 3;
   border-top: 8px solid #222;
   padding: 60px 30px 30px;
   display: -webkit-box;
@@ -513,6 +515,20 @@ footer .row-2 a:hover {
           flex-direction: column;
   padding: 40px 20px;
 }
+.container-movie h2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin-bottom: 15px;
+}
+.container-movie p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+.container-movie p:last-child {
+  margin-bottom: 0;
+}
 .container-movie .info-movie {
   position: relative;
   width: 100vw;
@@ -532,6 +548,14 @@ footer .row-2 a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding-right: 40px;
+}
+.container-movie .info-movie .content-info-film h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 4.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 .container-movie .list-chapter {
   width: 100vw;
