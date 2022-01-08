@@ -487,3 +487,58 @@ footer .row-2 a:hover {
   -webkit-transform: translate3d(20px, 0px, 0px);
           transform: translate3d(20px, 0px, 0px);
 }
+
+.bg-film {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, black)), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, black)), url("../../assets/images/house_of_cards_featured_image.jpg");
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, black 70%), linear-gradient(-360deg, rgba(0, 0, 0, 0) 0%, black 70%), url("../../assets/images/house_of_cards_featured_image.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  opacity: 0.4;
+}
+
+.container-movie {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px 20px;
+}
+.container-movie .info-movie {
+  width: 35vw;
+}
+.container-movie .list-chapter {
+  width: 75vw;
+  padding-top: 60vh;
+}
+.container-movie .list-chapter ul {
+  list-style: none;
+}
+.container-movie .list-chapter ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container-movie .list-chapter ul li a img {
+  max-width: 440px;
+  min-width: 100%;
+}
