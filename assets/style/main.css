@@ -493,9 +493,9 @@ footer .row-2 a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80vh;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, black)), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, black)), url("../../assets/images/house_of_cards_featured_image.jpg");
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, black 70%), linear-gradient(-360deg, rgba(0, 0, 0, 0) 0%, black 70%), url("../../assets/images/house_of_cards_featured_image.jpg");
+  height: 95vh;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, black)), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)), url("../../assets/images/house_of_cards_featured_image.jpg");
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, black 70%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%), url("../../assets/images/house_of_cards_featured_image.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   opacity: 0.4;
