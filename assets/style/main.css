@@ -15,6 +15,7 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   font-weight: 400;
   color: var(--white);
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 button {
@@ -583,6 +585,7 @@ footer .row-2 a:hover {
 .container-movie .list-chapter ul li a {
   position: relative;
   background-color: #000;
+  margin-bottom: 15px;
 }
 .container-movie .list-chapter ul li a i {
   -webkit-transition: all 0.3s ease;
@@ -598,7 +601,6 @@ footer .row-2 a:hover {
 .container-movie .list-chapter ul li a img {
   max-width: 100%;
   min-width: 100%;
-  margin-bottom: 15px;
 }
 .container-movie .list-chapter ul li a:hover i {
   border: 6px solid #a5a3a3;

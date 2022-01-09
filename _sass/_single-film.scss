@@ -68,6 +68,7 @@
                 a{
                     position: relative;
                     background-color: #000;
+                    margin-bottom: 15px;
                     i{
                         transition: all .3s ease;
                         position: absolute;
@@ -81,7 +82,6 @@
                     img{
                         max-width: 100%;
                         min-width: 100%;
-                        margin-bottom: 15px;
                     }
                     &:hover i{
                         border: 6px solid rgb(165, 163, 163);
